@@ -1,4 +1,10 @@
 site_name: My Docs
+#site_description: ''
+#site_author: ''
+repo_url: https://github.com/john-cd/frontend
+edit_uri: edit/master/docs/
 pages:
     - Home: index.md
 #    - About: about.md
+
+google_analytics: ['UA-36723568-3', 'mkdocs.org']

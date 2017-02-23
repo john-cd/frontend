@@ -1,4 +1,6 @@
-
+---
+published: false
+---
 Documentation created using MkDocs
 
 For full documentation visit [mkdocs.org](http://mkdocs.org).
