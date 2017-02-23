@@ -1,4 +1,5 @@
 exclude/
+documentation/site/
 
 # Windows thumbnail cache files
 Thumbs.db
