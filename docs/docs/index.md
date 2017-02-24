@@ -1,6 +1,6 @@
 # Side Project Documentation
 
-**Work in Progress**
+This project is very much still a **Work in Progress**. So is this documentation.
 
 
 ## Step by Step
@@ -84,7 +84,76 @@ https://www.tutorialspoint.com/angular2/index.htm
 
 ### create folder structure
 
+https://cli.angular.io/
+
 https://angular.io/docs/ts/latest/guide/style-guide.html#!#file-tree
+
+
+### Angular CLI
+
+```bash
+$ npm install -g @angular/cli
+
+$ ng help
+
+ng new PROJECT_NAME
+cd PROJECT_NAME
+ng serve
+
+```
+
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-beta.32.3.
+
+## Development server
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+### npm package.json` when not using Angular CLI
+
+(from quickstart)
+
+"description": "QuickStart package.json from the documentation, supplemented with testing support",
+  "scripts": {
+    "build": "tsc -p src/",
+    "build:watch": "tsc -p src/ -w",
+    "build:e2e": "tsc -p e2e/",
+    "serve": "lite-server -c=bs-config.json",
+    "serve:e2e": "lite-server -c=bs-config.e2e.json",
+    "prestart": "npm run build",
+    "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
+    "pree2e": "npm run build:e2e",
+    "e2e": "concurrently \"npm run serve:e2e\" \"npm run protractor\" --kill-others --success first",
+    "preprotractor": "webdriver-manager update",
+    "protractor": "protractor protractor.config.js",
+    "pretest": "npm run build",
+    "test": "concurrently \"npm run build:watch\" \"karma start karma.conf.js\"",
+    "pretest:once": "npm run build",
+    "test:once": "karma start karma.conf.js --single-run",
+    "lint": "tslint ./src/**/*.ts -t verbose"
+  },
 
 
 
@@ -122,10 +191,24 @@ Here are the test related scripts:
 * `npm run e2e` - compiles and run protractor e2e tests, written in Typescript (*e2e-spec.ts)
 
 
+## Visual Studio Code + TypeScript
+
+https://code.visualstudio.com/Docs/languages/typescript#_hiding-derived-javascript-files
+
+
+## Visual Studio integration
+
+https://angular.io/docs/ts/latest/cookbook/visual-studio-2015.html
+
+http://blog.stevensanderson.com/2016/10/04/angular2-template-for-visual-studio/
+
+```bash
+npm install -g typescript@2.0
+```
 
 
 
-### Rich UI components for Angular 2:
+### Rich UI components for Angular 2
 
 [Review of UI components](https://www.infoq.com/articles/Angular2-TypeScript-High-Level-Overview)
 
@@ -137,6 +220,6 @@ Here are the test related scripts:
 
 
 
-### HTTPS Certifactes
+### HTTPS Certificate Generation
 
 https://letsencrypt.org/docs/client-options/ 
